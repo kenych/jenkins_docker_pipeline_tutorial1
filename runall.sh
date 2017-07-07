@@ -18,6 +18,10 @@ IP=$(ifconfig en0 | awk '/ *inet /{print $2}')
 
 echo "Host ip: ${IP}"
 
+if [ ! -d m2deps ]; then
+    mkdir m2deps
+fi
+
 docker run -p 8080:8080  -v `pwd`/downloads:/var/jenkins_home/downloads \
     -v `pwd`/jobs:/var/jenkins_home/jobs/ -v `pwd`/m2deps:/var/jenkins_home/.m2/repository/ --rm --name myjenkins \
     -e SONARQUBE_HOST=http://"${IP}":9000 myjenkins:latest
