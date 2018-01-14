@@ -1,8 +1,8 @@
 downloads/
 m2deps/
-jobs/berlin-clock/builds/
-jobs/berlin-clock/cobertura/
-jobs/berlin-clock/lastStable
-jobs/berlin-clock/lastSuccessful
-jobs/berlin-clock/nextBuildNumber
-jobs/berlin-clock/workspace/
+jobs/maze-explorer/builds/
+jobs/maze-explorer/cobertura/
+jobs/maze-explorer/lastStable
+jobs/maze-explorer/lastSuccessful
+jobs/maze-explorer/nextBuildNumber
+jobs/maze-explorer/workspace/
